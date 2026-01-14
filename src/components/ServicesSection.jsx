@@ -6,7 +6,7 @@ import serviceIdentity from '../assets/images/service_identity.png'
 
 const ServicesSection = () => {
     return (
-        <div className="w-full bg-white rounded-t-[60px] p-20 -mt-12 relative z-20">
+        <div className="w-[98%] mx-auto bg-white border border-zinc-400 rounded-[60px] p-20 -mt-12 relative z-20">
             {/* Header */}
             <div className="flex justify-between items-start mb-20 px-10">
                 <h2 className="text-6xl font-medium text-zinc-900 tracking-tight">Our Services</h2>
@@ -37,7 +37,10 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Card 2: 2D/3D Animation (Featured) */}
-                <div className="w-1/3 bg-purple-600 rounded-[40px] p-8 flex flex-col justify-between h-[550px] relative overflow-hidden -mt-6 shadow-2xl shadow-purple-200">
+                <div
+                    className="flex-1 rounded-[40px] p-8 flex flex-col justify-between h-[500px] relative overflow-hidden drop-shadow-xl"
+                    style={{ background: 'linear-gradient(to bottom, #9333ea calc(100% - 16rem), transparent calc(100% - 16rem))' }}
+                >
                     <div className="relative z-10">
                         <h3 className="text-3xl font-medium text-white leading-tight">2D/3D <br /> Animation</h3>
 
@@ -47,22 +50,20 @@ const ServicesSection = () => {
                     </div>
 
                     {/* Cutout Button Effect */}
-                    <div className="absolute bottom-6 left-6 z-20">
-                        <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-lg cursor-pointer hover:scale-105 transition-transform border-[6px] border-white">
+                    <div className="absolute bottom-4 left-2 z-20">
+                        <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-lg cursor-pointer hover:scale-105 transition-transform border-2 border-purple-600">
                             <MoveUpRight size={32} />
                         </div>
                     </div>
 
-                    {/* Image Area with "Cutout" Mask Illusion */}
-                    <div className="absolute bottom-0 right-0 w-full h-64 rounded-b-[40px] overflow-hidden">
-                        <img src={serviceAnimation} alt="Animation" className="w-full h-full object-cover mask-image-bottom" />
-                        {/* White arc to simulate the cutout if needed, or just rely on the button being on top */}
-                        <div className="absolute bottom-6 left-6 w-24 h-24 bg-purple-600 rounded-full -z-10 scale-110"></div>
+                    {/* Image Area with Rounded Cutout */}
+                    <div className="absolute bottom-0 right-0 w-full h-64 rounded-br-[40px] rounded-bl-[50%] overflow-hidden">
+                        <img src={serviceAnimation} alt="Animation" className="w-full h-full object-cover" />
                     </div>
                 </div>
 
                 {/* Card 3: Visual Identity */}
-                <div className="w-1/3 border border-purple-200 rounded-[40px] p-8 flex flex-col justify-between h-[500px] hover:border-purple-400 transition-colors bg-white group">
+                <div className="flex-1 border border-purple-200 rounded-[40px] p-8 flex flex-col justify-between h-[500px] hover:border-purple-400 transition-colors bg-white group">
                     <div className="flex justify-between items-start">
                         <h3 className="text-3xl font-medium text-zinc-800 leading-tight">Visual <br /> Identity</h3>
                         <div className="w-14 h-14 bg-purple-600 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">

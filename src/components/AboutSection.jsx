@@ -4,15 +4,16 @@ import { Sparkles } from 'lucide-react'
 const AboutSection = () => {
     return (
         <div className='w-full bg-white py-32 flex flex-col items-center justify-center text-center px-20 relative'>
-            <p className="text-zinc-400 text-xs tracking-widest uppercase mb-10">— About Astratto</p>
+            <p className="text-zinc-400 text-md tracking-widest uppercase mb-10">— About Astratto</p>
 
             <h2 className="text-5xl leading-tight font-medium text-zinc-900 max-w-5xl">
                 <span className="inline-block relative">
-                    {/* Yellow abstract squiggly icon imitation */}
-                    <svg className="absolute -top-8 -left-8 w-12 h-12 text-yellow-400" viewBox="0 0 50 50" fill="currentColor">
-                        <path d="M25,0 C15,0 10,10 5,15 C0,20 10,30 20,25 C30,20 40,10 50,25" fill="none" stroke="currentColor" strokeWidth="4" />
-                        {/* Simple loop shape for the icon */}
-                        <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="10 5" />
+                    {/* Yellow Curly Arrow pointing to text */}
+                    <svg className="absolute -top-36 -left-12 w-32 h-32 text-yellow-400 rotate-12" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+                        {/* Spiral/Curly path */}
+                        <path d="M 20 40 C 30 10 80 10 80 40 C 80 70 30 60 30 45 C 30 35 50 35 75 75" />
+                        {/* Arrow Head */}
+                        <path d="M 65 75 L 75 75 L 78 63" />
                     </svg>
                 </span>
                 Our <span className="text-zinc-300">visionary</span> <span className="text-orange-500">artisans</span> collaborate seamlessly to craft
@@ -28,8 +29,8 @@ const AboutSection = () => {
             </h2>
 
             {/* Bottom Squiggle */}
-            <svg className="absolute bottom-20 left-40 w-64 h-24 text-purple-700" viewBox="0 0 300 100" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M0 50 Q 50 20, 100 50 T 200 50 T 300 80" />
+            <svg className="absolute bottom-10 left-40 w-[450px] h-24 text-purple-700 opacity-60" viewBox="0 0 500 100" fill="none" stroke="currentColor" strokeWidth="3">
+                <path d="M0 50 Q 75 10, 150 50 T 300 50 T 450 50 T 500 80" />
             </svg>
 
         </div>

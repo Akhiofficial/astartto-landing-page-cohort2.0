@@ -6,9 +6,9 @@ const BottomRightImage = () => {
     return (
         <div>
             <div className="absolute bottom-20 right-10 w-80 h-80">
-                <img src={heroHouse} alt="3D House" className="w-full h-full rotate-8 object-cover shadow-2xl rounded-[100px_100px_40px_40px]" />
+                <img src={heroHouse} alt="3D House" className="w-full h-full rotate-8 object-cover shadow-xl rounded-[100px_100px_40px_40px]" />
                 <div className="absolute top-0 right-10">
-                    <Sparkles className="text-yellow-400 w-6 h-6 fill-yellow-400" />
+                    <Sparkles className="text-yellow-400 w-8 h-8 fill-yellow-400" />
                 </div>
             </div>
         </div>
