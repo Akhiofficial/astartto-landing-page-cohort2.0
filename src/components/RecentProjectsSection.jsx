@@ -41,26 +41,26 @@ const RecentProjectsSection = () => {
     ];
 
     return (
-        <div className='w-full min-h-screen bg-white rounded-t-[60px] p-20 -mt-12 relative z-30'>
+        <div className='w-full min-h-screen bg-white rounded-t-[30px] md:rounded-t-[60px] px-6 py-10 md:p-20 -mt-12 relative z-30'>
             {/* Header */}
-            <div className="flex justify-between items-start mb-20 px-10">
-                <h2 className="text-6xl font-medium text-zinc-900 tracking-tight">Recent Projects</h2>
-                <p className="w-1/3 text-zinc-500 text-lg leading-relaxed text-right">
+            <div className="flex flex-col md:flex-row justify-between items-start mb-10 md:mb-20 px-0 md:px-10 gap-6 md:gap-0">
+                <h2 className="text-4xl md:text-6xl font-medium text-zinc-900 tracking-tight">Recent Projects</h2>
+                <p className="w-full md:w-1/3 text-zinc-500 text-lg leading-relaxed text-left md:text-right">
                     Step into the world of our most recent projects, a showcase of our unwavering commitment to progressive design
                 </p>
             </div>
 
             {/* Projects Grid with Staggered Layout */}
-            <div className="flex gap-20 px-10">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-20 px-0 md:px-10">
                 {/* Left Column */}
-                <div className="flex-1 flex flex-col gap-24">
+                <div className="flex-1 flex flex-col gap-16 md:gap-24">
                     {projectsLeft.map((project, index) => (
                         <ProjectCard key={index} {...project} />
                     ))}
                 </div>
 
                 {/* Right Column (Offset Down) */}
-                <div className="flex-1 flex flex-col gap-24 pt-32">
+                <div className="flex-1 flex flex-col gap-16 md:gap-24 pt-0 md:pt-32">
                     {projectsRight.map((project, index) => (
                         <ProjectCard key={index} {...project} />
                     ))}
